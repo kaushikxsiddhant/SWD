@@ -32,6 +32,8 @@
 <script src="jquery.js.download"></script>
 <script src="materialize.js.download"></script>
 <script src="init.js.download"></script>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -1277,4 +1279,10 @@
 
 
 
-<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="mobile-demo" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="mobile-demo" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+}
+</script>
+</body></html>
